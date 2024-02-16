@@ -33,3 +33,29 @@ const myFunction = function(){
 
 
 console.log(typeof id)
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+let myYtname = "Hiteshchaudharydotcom"
+
+let anotherName = myYtname
+
+anotherName = "Hitesth@ic.in"
+
+console.log(myYtname)
+console.log(anotherName)
+
+let userOne = {
+    email: "Hitesh@email.com",
+    upi: "userOne@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "hitesh@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+ 
