@@ -14,15 +14,17 @@
     const sayDate =  function(str) {
         console.log(`${str} Hitesh`,Date.now())
     }
-    let end;
+    let intervalId;
     document.querySelector('#start').addEventListener('click',function(){
-        const intervalId = setInterval(sayDate,1000,"Hi");
+        if(!intervalId){
+            intervalId = setInterval(sayDate,1000,"Hi");
+        }
         console.log("Started");
-        end = intervalId
     })
     document.querySelector('#stop').addEventListener('click',function(){
-        clearInterval(end)
+        clearInterval(intervalId)
         console.log("Stopped");
+        intervalId = null;
     })
 </script>
 </html>
